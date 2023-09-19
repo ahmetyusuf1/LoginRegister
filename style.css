@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --color-primary: rgba(50,120,70,.5);
+    --color-primary-dark: rgb(4,35,14);
+    --color-secondary: rgb(60,60,190);
+    --color-error: rgb(210,40,40);
+    --color-success: rgb(90,150,40);
+    --border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/yazilimfoto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    max-height: 600px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px red;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Form Areas */
+
+.form_title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_input_group {
+    margin-bottom: 1rem;
+}
+
+.form_input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: 2px solid #ddd;
+    background-color: #eee;
+    transition: .3s;
+}
+
+.form_input:focus {
+    background-color: #fff;
+    border-color: var(--color-primary);
+}
+
+.form_input-error_message {
+    margin-top: .5rem;
+    font-size: .85rem;
+    color: var(--color-error);
+}
+
+.form_button {
+    width: 90%;
+    padding: 1rem 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    cursor: pointer;
+    transition: all .4s ease;
+    margin-top: 1rem;
+}
+
+.form_button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.form_button:active {
+    transform: scale(0.97);
+}
+
+.form_text {
+    margin-top: 1rem;
+}
+
+.form_link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form_link:hover {
+    text-decoration: underline;
+}
+
+.container, .form_input, .form_button {
+    font: 500 1rem 'Roboto', sans-serif;
+}
